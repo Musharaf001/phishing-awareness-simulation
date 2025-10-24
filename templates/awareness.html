@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Awareness</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding:20px; background:#f6f8fb; color:#111; }
+    .box{ max-width:700px; margin:20px auto; background:#fff; border:1px solid #e6e9ee; padding:20px; border-radius:8px; }
+    h2 { margin-top:0; }
+    ul { margin-top:6px; }
+    a { color:#0a66c2; text-decoration:none; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>This was a simulation</h2>
+    {% if submitted %}
+      <p>You submitted credentials — <strong>this was a safe demo</strong>. Never enter your real password on suspicious pages.</p>
+    {% else %}
+      <p>You clicked the link — <strong>this was a safe demo</strong>. Always verify sender and link URL before clicking.</p>
+    {% endif %}
+    <h4>Quick tips</h4>
+    <ul>
+      <li>Check the sender email address carefully.</li>
+      <li>Hover over links to see the real URL.</li>
+      <li>Never enter credentials on unexpected pages.</li>
+    </ul>
+    <p><a href="/">Back to demo email</a> — <a href="/dashboard">View dashboard</a></p>
+  </div>
+</body>
+</html>

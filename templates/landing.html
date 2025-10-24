@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Sign In</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding:20px; background:#f7f7f7; }
+    .box { max-width:360px; margin: 40px auto; background:#fff; border:1px solid #ddd; padding:20px; border-radius:8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+    label { display:block; margin-top:10px; font-size:14px; }
+    input { width:100%; padding:8px; margin-top:6px; box-sizing:border-box; }
+    button { margin-top:12px; padding:8px 12px; cursor:pointer; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h3>Company Portal</h3>
+    <p>Please sign in to continue</p>
+    <form method="post">
+      <label>Username
+        <input name="username" required>
+      </label>
+      <label>Password
+        <input name="password" type="password" required>
+      </label>
+      <button type="submit">Sign In</button>
+    </form>
+  </div>
+</body>
+</html>

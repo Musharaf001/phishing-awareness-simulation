@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard</title>
+  <style>
+    body{font-family:Arial, sans-serif;padding:20px;background:#f7f7f7;}
+    table{border-collapse:collapse;width:50%;margin:20px auto;background:#fff;}
+    td,th{border:1px solid #ddd;padding:8px;text-align:center;}
+    th{background:#eee;}
+    a {text-decoration:none;color:#0a66c2;}
+  </style>
+</head>
+<body>
+  <h2 style="text-align:center;">Simulation Dashboard</h2>
+  <table>
+    <thead>
+      <tr><th>Event</th><th>Count</th></tr>
+    </thead>
+    <tbody>
+      {% for event,count in rows %}
+      <tr><td>{{ event }}</td><td>{{ count }}</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <p style="text-align:center;"><a href="/">Open demo email</a></p>
+</body>
+</html>
